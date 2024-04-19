@@ -35,13 +35,13 @@ might help with the notation for mathematical expressions.
 
 ## Analysis
 
-if statement -> constant
+if statement -> constant... + 1
 
 else statement ->
 
--for loops n * n * n * n * n = n^5
+-for loops $n * n * n * n * n = n^5$
 
--recursion 3T(n/3) -> 3 recursion calls with n/3 each time
+-recursion $3T(n/3)$ -> 3 recursion calls with n/3 each time
 
 => $3T(n/3)+n^5$
 
@@ -54,6 +54,23 @@ one more time
 => $3(9T(n/9/3)+(n/3/3)^5 + (n/3)^5) + n^5$ => $27T(n/27) + (n/9)^5 + (n/3)^5 + n^5$ 
 
 => $3^iT(n/3^i) + \sum_{j=0}^{} (n/3^j)^5$ 
+
+because constants can be ignored, we can write $\sum_{j=0}^{} (n/3^j)^5$ as just $n^5$
+
+let $i = \log_3(n)$
+
+=> $nT(1) + n^5$
+
+=> $n + n^5$
+
+drop the n because it is a lower order
+
+=> $T(n) = O(n^5)$
+
+### sources used
+class video on insertion sort
+
+https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
 
 
 
