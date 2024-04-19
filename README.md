@@ -72,6 +72,8 @@ class video on insertion sort
 
 https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
 
+checked my work against nolan berg's repo to make sure that I was on the right track
+
 
 
 
