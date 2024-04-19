@@ -31,3 +31,36 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+## Analysis
+
+if statement -> constant
+
+else statement ->
+
+-for loops n * n * n * n * n = n^5
+
+-recursion 3T(n/3) -> 3 recursion calls with n/3 each time
+
+=> $3T(n/3)+n^5$
+
+plug it into itself
+
+=> $3(3T(n/3/3)+(n/3)^5) + n^5$     =>     $9T(n/9)+(n/3)^5 + n^5$
+
+one more time
+
+=> $3(9T(n/9/3)+(n/3/3)^5 + (n/3)^5) + n^5$ => $27T(n/27) + (n/9)^5 + (n/3)^5 + n^5$ 
+
+=> $3^iT(n/3^i) + \sum_{j=0}^{} (n/3^j)^5$ 
+
+
+
+
+
+
+
+
+
+
