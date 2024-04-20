@@ -47,15 +47,15 @@ else statement ->
 
 plug it into itself
 
-=> $3(3T(n/3/3)+(n/3)^5) + n^5$     =>     $9T(n/9)+(n/3)^5 + n^5$
+=> $3(3T(n/3/3)+(n/3)^5) + n^5$     =>     $9T(n/9)+3(n/3)^5 + n^5$
 
 one more time
 
-=> $3(9T(n/9/3)+(n/3/3)^5 + (n/3)^5) + n^5$ => $27T(n/27) + (n/9)^5 + (n/3)^5 + n^5$ 
+=> $27T(n/27) + 9(n/9)^5 + 3(n/3)^5 + n^5$ 
 
-=> $3^iT(n/3^i) + \sum_{j=0}^{} (n/3^j)^5$ 
+=> $3^iT(n/3^i) + \sum_{j=0}^{} 3^j (n/3^j)^5$ 
 
-because constants can be ignored, we can write $\sum_{j=0}^{} (n/3^j)^5$ as just $n^5$
+because constants can be ignored, we can write $\sum_{j=0}^{} 3^j(n/3^j)^5$ as just $n^5$
 
 let $i = \log_3(n)$
 
