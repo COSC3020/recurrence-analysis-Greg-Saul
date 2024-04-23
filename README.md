@@ -53,9 +53,9 @@ one more time
 
 => $27T(n/27) + 9(n/9)^5 + 3(n/3)^5 + n^5$ 
 
-=> $3^iT(n/3^i) + \sum_{j=0}^{} 3^j (n/3^j)^5$ 
+=> $3^iT(n/3^i) + \sum_{j=0}^{i-1} 3^j (n/3^j)^5$ 
 
-because constants can be ignored, we can write $\sum_{j=0}^{} 3^j(n/3^j)^5$ as just $n^5$
+because constants can be ignored, we can write $\sum_{j=0}^{i-1} 3^j(n/3^j)^5$ as just $n^5$
 
 let $i = \log_3(n)$
 
