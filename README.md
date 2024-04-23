@@ -55,7 +55,7 @@ one more time
 
 => $3^iT(n/3^i) + \sum_{j=0}^{i-1} 3^j (n/3^j)^5$ 
 
-because constants can be ignored, we can write $\sum_{j=0}^{i-1} 3^j(n/3^j)^5$ as just $n^5$
+$\sum_{j=0}^{i-1} 3^j(n/3^j)^5 = (\frac{1-}{1-})$
 
 let $i = \log_3(n)$
 
