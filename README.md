@@ -55,6 +55,14 @@ one more time
 
 => $3^iT(n/3^i) + \sum_{j=0}^{i-1} 3^j (n/3^j)^5$
 
+=> $3^iT(n/3^i) + n^5 \sum_{j=0}^{i-1} (1/3^{4j})$
+
+using the math review that you provided, we can solve the sum to be $n^5(\frac{1-3^i}{1-3})$
+
+let $i = \log_3(n)$
+
+=> $nT(1) + n^5(\frac{n-1}{2})$
+
 
 
 
