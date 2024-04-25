@@ -53,46 +53,21 @@ one more time
 
 => $27T(n/27) + 9(n/9)^5 + 3(n/3)^5 + n^5$ 
 
-=> $3^iT(n/3^i) + \sum_{j=0}^{i-1} 3^j (n/3^j)^5$
 
 => $3^iT(n/3^i) + n^5 \sum_{j=0}^{i-1} (1/3^{4j})$
 
-using the math review that you provided, we can solve the sum to be $n^5(\frac{1-3^i}{1-3})$
+I have pulled the $n^5$ out of the sum which will leave nothing but constants when the sum is solved. this gives us essentially $n^5(c)$
 
 let $i = \log_3(n)$
 
-=> $nT(1) + n^5(\frac{n-1}{2})$
+=> $nT(1) + n^5(c)$
 
+the $nT(1)$ reduces to $n$
 
+this leaves us with $n+n^5(c)$
 
+we can drop the lower order and the constant leaving us with $T(n) \in \theta(n^5)$
 
-
-</br></br></br></br></br></br></br></br></br></br>
-
-
-
-
-
-
-
-
-
-
-=> $\sum_{j=0}^{i-1} 3^j (n^5/3^{4(j-1)})^5$
-
-$\sum_{j=0}^{i-1} 3^j(n/3^j)^5 = (\frac{1-}{1-})$
-
-let $i = \log_3(n)$
-
-=> $\sum_{j=0}^{\log_3(n)-1} 3^j (n^5/3^{4(j-1)})^5$
-
-=> $nT(1) + n^5$
-
-=> $n + n^5$
-
-drop the n because it is a lower order
-
-=> $T(n) = O(n^5)$
 
 ### sources used
 class video on insertion sort
