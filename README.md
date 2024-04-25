@@ -1,14 +1,4 @@
-here is my work for example j = 3: $n^5(\frac{1}{3^{4(2)}})$ 
 
-=> $\frac{n^5}{3^{4(2)}}$ 
-
-=> $\frac{n^5}{9^{4}}$ 
-
-=> $\frac{n^5}{9^{4}}(\frac{9}{9})$ 
-
-=> $\frac{9n^5}{9^5}$ 
-
-=> $9(\frac{n}{9})^5$
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OlW38W4k)
