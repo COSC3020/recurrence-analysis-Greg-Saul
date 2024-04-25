@@ -1,3 +1,7 @@
+
+
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OlW38W4k)
 # Recurrence Analysis -- Mystery Function
 
 Analyze the running time of the following recursive procedure as a function of
@@ -30,3 +34,57 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+## Analysis
+
+if statement -> constant... + 1
+
+else statement ->
+
+-for loops $n * n * n * n * n = n^5$
+
+-recursion $3T(n/3)$ -> 3 recursion calls with n/3 each time
+
+=> $3T(n/3)+n^5$
+
+plug it into itself
+
+=> $3(3T(n/3/3)+(n/3)^5) + n^5$     =>     $9T(n/9)+3(n/3)^5 + n^5$
+
+one more time
+
+=> $27T(n/27) + 9(n/9)^5 + 3(n/3)^5 + n^5$ 
+
+
+=> $3^iT(n/3^i) + n^5 \sum_{j=1}^{i} (\frac{1}{3^{4(j-1)}})$
+
+I have pulled the $n^5$ out of the sum which will leave nothing but constants when the sum is solved. this gives us essentially $n^5(c)$
+
+let $i = \log_3(n)$
+
+=> $nT(1) + n^5(c)$
+
+the $nT(1)$ reduces to $n$
+
+this leaves us with $n+n^5(c)$
+
+we can drop the lower order and the constant leaving us with $T(n) \in \theta(n^5)$
+
+
+### sources used
+class video on insertion sort
+
+https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
+
+checked my work against nolan berg's repo to make sure that I was on the right track
+
+
+
+
+
+
+
+
+
+
